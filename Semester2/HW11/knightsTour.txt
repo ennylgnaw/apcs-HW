@@ -1,0 +1,21 @@
+Lynne Wang
+APCS2 pd1
+HW11 -- Get On the.Bus, Cuz We’re Going for a Riiiiiiiiiiiiiiiiiide!
+2018-03-01
+
+Express your algorithm for generating a sequence of moves a knight may
+make to touch each square of an n*n grid exactly once --- or to determine
+that this task is impossible.
+
+Idea: Use an algo similar to that of the QueenBoard problem.
+
+Algo:
+1) Check to see if all spots on the board have been traversed.
+2) If spots all traversed, print solution
+3) If spots not all traversed, from the most recent knight position,
+   a) make another move with the knight if moves can be made (knight can
+      make 8 moves).
+   b) If moves can't be made, remove the knight from the current position
+      and try other moves.
+   c) If no paths can be found, return false. If the first item we
+      placed on the board returns false, no solutions exist.

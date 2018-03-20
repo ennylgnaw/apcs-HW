@@ -1,0 +1,43 @@
+Lynne Wang
+APCS2 pd1
+HW09 -- Yaaasss Queens
+2018-02-26
+
+Prompt:
+Without succumbing to the temptation of an Internet search,
+explain as clearly as possible, in a plaintext file,
+how you know whether each case is solvable -- and if so,
+how many solutions it has.
+
+Idea:
+Each queen must occupy its own row, column, and diagonal. It is noteworthy
+that the path that a knight travels (L-shape) meets the criteria above.
+
+Algo:
+1. Start at top row.
+2. If all queens have been placed, return true.
+3. For each column in the row, check to see if a queen can be placed correctly.
+   If so, continue from that row and column recursively to see if there is a
+   solution. If yes, print the solution. If not, try other columns. If other
+   columns yield no solutions, go to next row, and so on.
+
+- 2x2: NO, this is not solvable. Under the condition that each queen must be
+  in its own row and column, the queens would share a diagonal.
+
+- 3x3: NO, this is not solvable. Under the condition that each queen must be
+  in its own row and column, the queens would share a diagonal.
+
+- 4x4: YES, this is solvable.
+  - 2 solutions
+
+- 5x5: YES, this is solvable.
+  - 10 solutions
+
+- 6x6: YES, this is solvable.
+  - 4 solutions
+
+- 7x7: YES, this is solvable.
+  - 40 solutions
+
+- 8x8: YES, this is solvable.
+  - 92 solutions

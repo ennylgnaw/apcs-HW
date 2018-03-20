@@ -1,0 +1,10 @@
+public class Resrever {
+
+    //reverse a String in O(n) time
+    public static String reverseA(String str) {
+	String s = '';
+	for(int i = str.length() - 1; i >= 0; i--)
+	    s += str.substring(i,i+1);
+	return s;
+    }
+}
