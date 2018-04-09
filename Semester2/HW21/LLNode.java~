@@ -4,14 +4,14 @@
  * Stores its data as a String
  *****************************************************/
 
-public class LLNode
+public class LLNode<String><
 {
     //instance vars
     private String _cargo;
-    private LLNode _nextNode;
+    private LLNode<String> _nextNode;
 
     // constructor 
-    public LLNode( String content, LLNode nextNode ) {
+    public LLNode( String content, LLNode<String> nextNode ) {
 	_cargo = content;
 	_nextNode = nextNode;
     }
@@ -22,7 +22,7 @@ public class LLNode
 	return _cargo;
     }
 
-    public LLNode getNext()
+    public LLNode<T> getNext()
     {
 	return _nextNode;
     }
@@ -37,9 +37,9 @@ public class LLNode
 	return old;
     }
 
-    public LLNode setNext( LLNode newNext )
+    public LLNode<String> setNext( LLNode<String> newNext )
     {
-	LLNode old = this.getNext();
+	LLNode<String> old = this.getNext();
 	_nextNode = newNext;
 	return old;
     }
@@ -49,7 +49,7 @@ public class LLNode
     // override inherited toString
     public String toString()
     {
-	return this.getCargo();
+
     }
 
 
@@ -58,18 +58,6 @@ public class LLNode
     {
 	//PROTIP: try creating a few nodes: traversible, connected...
 	//note anything notable as you develop and test...
-
-	LLNode beg = new LLNode( "a", null );
-
-        beg.setNext( new LLNode( "b", null ) );
-
-        beg.getNext().setNext( new LLNode( "c", null ) );
-
-	LLNode i = beg; 
-	while( i != null ) {
-	    System.out.println( i );
-	    i = i.getNext();
-	}
 	
     }//end main
 
