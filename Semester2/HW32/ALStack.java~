@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class ALStack implements Stack {
+
+    //instance vars
+    ArrayList arr;
+    int _size;
+    
+    public booloean isEmpty() {
+
+    }
+    
+}
