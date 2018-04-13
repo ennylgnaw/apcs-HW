@@ -1,3 +1,8 @@
+//Lynne Wang
+//APCS2 pd1
+//HW #32: Leon Leonwood Stack
+//2018-04-12
+
 /*****************************************************
  * class Stckr
  * driver/tester for Stack implementations (Linked-list-based, ArrayList-based)
