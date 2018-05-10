@@ -19,7 +19,7 @@ public class ArrayPriorityQueue implements PriorityQueue {
     //adds String to end of ArrayList
     public void add( String str ) {
 	_queue.add(str);
-    }
+    } //O(1)
 
     //removes miminum String (priority)
     public String removeMin() {
@@ -30,7 +30,7 @@ public class ArrayPriorityQueue implements PriorityQueue {
 	    if ((_queue.get(i)).compareTo(_queue.get(minInd)) < 0) 
 		minInd = i;
 	return _queue.remove(minInd);
-    }
+    } //O(n)
 
     //returns minimum String (priority)
     public String peekMin() {
@@ -41,12 +41,12 @@ public class ArrayPriorityQueue implements PriorityQueue {
 	    if ((_queue.get(i)).compareTo(_queue.get(minInd)) < 0) 
 		minInd = i;
 	return _queue.get(minInd);
-    }
+    } //O(n)
 
     //returns true if empty, false if not
     public boolean isEmpty() {
 	return _queue.size() == 0;
-    } 
+    } //O(1)
 
     //Main
     public static void main( String[] args ) {
