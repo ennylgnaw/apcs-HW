@@ -1,3 +1,0 @@
-0. Multiple class definitions in a single .java file are allowed so long as
-only one class is given a "public" or "private" tag (the file must be named
-after this class). These extra classes are only accessible within the file.
