@@ -1,5 +1,5 @@
 /*
-(Kendrick Liang, Lynne Wang)
+ColonCloseParens (Kendrick Liang, Lynne Wang)
 APCS2 pd1
 HW #43: BSTs is the Perfect Place for Shade
 2018-05-02

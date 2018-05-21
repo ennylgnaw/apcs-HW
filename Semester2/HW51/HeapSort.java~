@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.*;
+
+/*******************************************************
+ * Algo:
+ * 1. Construct minheap from values
+ * 2. While heap size is not empty:
+ *       remove min from minheap, and add to retArr
+ *******************************************************/
+public class HeapSort {
+
+    public int[] heapSort(ALHeapMin minHeap) {
+	int[] retArr = new int[minHeap.size()];
+	for (int i = 0; i < retArr.length; i++)
+	    retArr[i] = minHeap.removeMin();
+	return retArr;
+    }
+
+}
+
+    

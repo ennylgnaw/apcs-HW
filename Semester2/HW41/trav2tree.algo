@@ -1,0 +1,26 @@
+Lynne Wang
+APCS2 pd1
+HW #41: A Tree Grows in 251
+2018-04-30
+
+Preorder + Inorder:
+(Minimum Prereq Info: it is a binary tree)
+1. Leftmost element in preorder is root
+2. In inorder, look for root element. Elements to the left are in the left
+   subbranch; elements to the right are in the right subbranch.
+3. Repeat steps 1 and 2 with each subbranch, until every leaf is one node
+
+Inorder + Postorder:
+(Minimum Prereq Info: it is a binary tree)
+1. Rightmost element in postorder is root
+2. In inorder, look for root element. Elements to the left are in the left
+   subbranch; elements to the right are in the right subbranch.
+3. Repeat steps 1 and 2 with each subbranch, until every leaf is one node
+
+Preorder + Postorder:
+(Minimum Prereq Info: tree is full-every node has either 0 or 2 daughter nodes)
+1. Leftmost element in preorder is root
+2. Subsequent element in preorder is left daughter of root.
+3. In postorder, elements to the left of element in Step 2 are in left subtree.
+   Elements to right are in right subtree.
+4. Repeat steps 2 and 3 with each subbranch, until every leaf is one node
